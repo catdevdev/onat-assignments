@@ -10,6 +10,5 @@ int translateValue(int val)
 int main()
 {
     cout << "val: " << translateValue(20) << endl;
-    
     return 0;
 }
