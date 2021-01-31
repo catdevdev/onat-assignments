@@ -15,6 +15,8 @@ void myFunction_2()
 int main()
 {
     myFunction_1();
+    myFunction_1();
+    myFunction_2();
     myFunction_2();
     return 0;
 }
