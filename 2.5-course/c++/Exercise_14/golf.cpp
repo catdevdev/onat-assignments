@@ -2,6 +2,8 @@
 #include <cstring>
 #include <iostream>
 
+using namespace std;
+
 void setgolf(golf &g, const char *name, int hc)
 {
     strcpy(g.fullname, name);
@@ -10,11 +12,11 @@ void setgolf(golf &g, const char *name, int hc)
 
 int setgolf(golf &g)
 {
-    std::cout << "Enter name: ";
-    std::cin.getline(g.fullname, Len);
+    cout << "Enter name: ";
+    cin.getline(g.fullname, Len);
 
-    std::cout << "Enter handicap: ";
-    (std::cin >> g.handicap).get();
+    cout << "Enter handicap: ";
+    (cin >> g.handicap).get();
 
     return strlen(g.fullname) == 0 ? 0 : 1;
 }
@@ -26,6 +28,6 @@ void handicap(golf &g, int hc)
 
 void showgolf(const golf &g)
 {
-    std::cout << "Name: " << g.fullname << std::endl;
-    std::cout << "Handicap: " << g.handicap << std::endl;
+    cout << "Name: " << g.fullname << endl;
+    cout << "Handicap: " << g.handicap << endl;
 }
